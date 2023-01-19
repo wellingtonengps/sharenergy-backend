@@ -5,7 +5,7 @@ import { DocumentBuilder } from '@nestjs/swagger';
 import { SwaggerDocumentOptions, SwaggerModule } from '@nestjs/swagger/dist';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create(AppModule, { cors: true });
 
   const config = new DocumentBuilder()
     .setTitle('User example')
@@ -24,6 +24,6 @@ async function bootstrap() {
   const prismaService = app.get(PrismaService);
   await prismaService.enableShutdownHooks(app);
 
-  await app.listen(3000);
+  await app.listen(3333);
 }
 bootstrap();
