@@ -10,8 +10,6 @@ export class UserService {
   async create(data: Prisma.UserCreateInput): Promise<User> {
     const passwordHash = await hash(data.password, 10);
 
-    console.log(passwordHash);
-
     const result = await this.prisma.user.create({
       data: { ...data, password: passwordHash },
     });
