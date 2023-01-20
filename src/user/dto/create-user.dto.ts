@@ -28,4 +28,16 @@ export class CreateUserDto {
    * @example "Rua Maria Teixeira Lopes, Juiz de Fora - MG"
    */
   address: string;
+
+  /**
+   * The username
+   * @example "wellingtonengps"
+   */
+  username: string;
+
+  /**
+   * The password
+   * @example "well1234"
+   */
+  password: string;
 }

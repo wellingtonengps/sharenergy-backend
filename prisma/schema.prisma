@@ -14,4 +14,6 @@ model User {
     name        String?
     phoneNumber Int
     address     String
+    username    String
+    password    String
 }

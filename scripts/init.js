@@ -16,6 +16,8 @@ db.User.insertMany([
     name: 'Maurice Jackson',
     phoneNumber: 5623018366,
     address: '3927 Brown Terrace',
+    username: 'mauriceengps',
+    password: 'wel1ing7',
   },
   {
     cpf: 142371056643,
@@ -23,5 +25,7 @@ db.User.insertMany([
     name: 'Wellington Pereira Silva',
     phoneNumber: 33999938459,
     address: 'Juiz de Fora',
+    username: 'wellingtonengps',
+    password: 'wel1ing7@',
   },
 ]);
